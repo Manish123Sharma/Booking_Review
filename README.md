@@ -67,22 +67,15 @@ Search
 
 Register a new user
 
-    curl -X POST http://localhost:5000/api/auth/signup \
-  -H "Content-Type: application/json" \
-  -d '{"username": "john_doe", "email": "john@example.com", "password": "password123"}'
+    curl -X POST http://localhost:5000/api/auth/signup \ -H "Content-Type: application/json" \ -d '{"username": "john_doe", "email": "john@example.com", "password": "password123"}'
 
 Login and get JWT token
 
-    curl -X POST http://localhost:5000/api/auth/login \
-  -H "Content-Type: application/json" \
-  -d '{"email": "john@example.com", "password": "password123"}'
+    curl -X POST http://localhost:5000/api/auth/login \-H "Content-Type: application/json" \ -d '{"email": "john@example.com", "password": "password123"}'
 
 Add a new book (Authenticated)
 
-    curl -X POST http://localhost:5000/api/books \
-  -H "Authorization: Bearer <your_jwt_token>" \
-  -H "Content-Type: application/json" \
-  -d '{"title": "Node.js Basics", "author": "Jane Doe", "genre": "Programming"}'
+    curl -X POST http://localhost:5000/api/books \ -H "Authorization: Bearer <your_jwt_token>" \ -H "Content-Type: application/json" \ -d '{"title": "Node.js Basics", "author": "Jane Doe", "genre": "Programming"}'
 
 Get all books with pagination and filters
 
