@@ -3,6 +3,8 @@ const cors = require('cors');
 const morgan = require('morgan');
 const dotenv = require('dotenv');
 const authRoutes = require('./src/routes/authRoutes');
+const bookRoutes = require('./src/routes/bookRoutes');
+const reviewRoutes = require('./src/routes/reviewRoutes');
 
 dotenv.config();
 require('./src/config/db');
@@ -13,6 +15,8 @@ app.use(cors());
 app.use(morgan("dev"));
 
 app.use('/auth', authRoutes);
+app.use('/book', bookRoutes);
+app.use('/review', reviewRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
