@@ -132,3 +132,31 @@ Review (Embedded within Book)
         comment: String,
         createdAt: { type: Date, default: Date.now }
     }
+
+## **👨‍💻** **Author**
+
+Manish Kumar Sharma
+
+[📧 Email](mailto:your-mksharma256001@gmail.com) | [💼 LinkedIn](https://www.linkedin.com/in/mks001/) | [🌐 GitHub](https://github.com/Manish123Sharma)
+
+
+## 🧑‍💻 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+---
+
+##  📜 License
+
+
+
+
+✅ This README includes:
+- Features  
+- Tech stack  
+- Screenshots section (you can replace with your actual images later)  
+- Setup steps  
+- API reference  
+- Future improvements  
+
